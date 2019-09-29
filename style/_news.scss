@@ -1,0 +1,47 @@
+.news__title{
+  
+}
+
+.news__container{
+  display: flex;
+  min-height: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsElement{
+  display:flex;
+  flex-direction: column;
+  height: 400px;
+  width: 20%;
+  &__img{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: $lightGray;
+    background-image: url("../assets/aktual1.png");
+    background-repeat: no-repeat;
+    >.image__label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:#fff;
+      position: absolute;
+      top:10px;
+      left:10px;
+      background-color: blue;
+      padding-left: 10px;
+      padding-right: 10px;
+      height:30px;
+      border-radius:25px;
+    }
+  }
+  &__title{
+    font-weight: 700;
+  }
+  &__button{
+    
+    width: 60%;
+    
+  }
+}

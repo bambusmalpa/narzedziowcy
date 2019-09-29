@@ -1,0 +1,24 @@
+.footer{
+  color:$hardGray;
+  .container{
+    display:flex;
+    justify-content:space-between;
+
+    .footer__firm{
+      background-image: url("../assets/rf.png");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 50px;;
+    }
+    .footer__big{
+      display:flex;
+      align-items: center;
+      .bigComLogo{
+        background-image: url("../assets/logobc.png");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 50px;;
+      }
+    }
+  }
+}

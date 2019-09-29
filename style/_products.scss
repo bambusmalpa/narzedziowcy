@@ -1,0 +1,46 @@
+.products{
+  background-color: $lightGray;
+  text-align: center;
+}
+.products__container{
+  display: flex;
+  min-height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.productsElement{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60%;
+  &__img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius:100%;
+    background: linear-gradient(135deg, rgba(1,175,249,1) 0%, rgba(11,78,154,1) 100%);
+    margin-bottom:10px;
+    >.productsElement__foto{
+      position: absolute;
+      background-image: url("../assets/odmulajace.png");
+      background-repeat: no-repeat;
+      left:50%;
+      top:50%;
+      transform: translate(-50%, -50%) rotate(10deg);
+      width: 70%;
+      height: 140%;
+      background-size:contain;
+    }
+  }
+  .productsElement__button{
+    width: 70%;
+    
+    &:hover{
+      background-color:#e2001a;
+      border:2px solid #e2001a;
+    }
+  }
+}

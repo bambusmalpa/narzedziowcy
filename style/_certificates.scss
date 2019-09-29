@@ -1,0 +1,52 @@
+.certificates__container{
+  display: flex;
+  min-height: 500px;
+  border-bottom:$hardGray 1px solid ;
+  >.certificates__element{
+    width: 45%;
+    height: 90%;
+  }
+  >.cerificates__left{
+    margin-top:5%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 60%;
+    >.certificates__title{
+      text-align: left;
+      margin-bottom:5%;
+    }
+    >.certificatesList{
+      margin-left: 20px;
+      list-style: none;
+      .certificatesList__element::before {
+        content: "\2022";
+        color: $mainBlue;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em}
+      
+
+      }
+      >.certificates__buttons{
+        margin-top:5%;
+        display: flex;
+        >.seeMoreButton{
+          width: 30%;
+          margin-right: 50px;
+        }
+      }
+    
+    }
+    >.cerificates__right{
+      >img{
+        width: 100%;
+      }
+      
+    }
+  }
+
+  
+  
+ 
